@@ -4,10 +4,9 @@ Tracking and capturing relevant events that occur in space and time is a common 
 
 This repo contains the data and code files required to build an IoT system to [implement IoT spatial analytics using Azure Maps](https://docs.microsoft.com/azure/azure-maps/tutorial-iothub-maps). Following are the resources in this repo:
 
-> [!div class="checklist"]
-> * A Json file representing the geofence area, that you can upload in the Azure Maps, Data service using the Data Upload API.
-> * c# code to create an Azure Function, implementing business logic based on Azure Maps spatial analytics.
-> * A python script that simulates an in-vehicle IoT device.
+  * A Json file representing the geofence area, that you can upload in the Azure Maps, Data service using the Data Upload API.
+  * c# code to create an Azure Function, implementing business logic based on Azure Maps spatial analytics.
+  * A python script that simulates an in-vehicle IoT device.
 
 
 ## Getting Started
