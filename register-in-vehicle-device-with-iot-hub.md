@@ -1,4 +1,4 @@
-### Register a device
+# Register a device
 
 In order to connect to the IoT hub and send data to it, a device must be registered. This guide teaches you how to register a device with IoT Hub.
 
