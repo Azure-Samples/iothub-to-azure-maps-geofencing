@@ -56,7 +56,7 @@ def iothub_client_telemetry():
                 message.set_content_encoding_system_property("utf-8")
                 message.set_content_type_system_property("application/json")
                  
-                # Add Eangine status as an application property to the message
+                # Add Engine status as an application property to the message
                 prop_map = message.properties()
                 if loc>0 and location==positions[loc-1]:
                     time_interval+=1
