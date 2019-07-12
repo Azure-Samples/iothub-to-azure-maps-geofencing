@@ -22,6 +22,7 @@ public static async Task Run(EventGridEvent eventGridEvent, ILogger log){
     await GetGeoAsync(eventData, client, subscriptionKey);
 }
 
+// Function with business logic
 public static async Task GetGeoAsync(string eventData, HttpClient client, string subscriptionKey){
 
     dynamic jsonData = JsonConvert.DeserializeObject(eventData);
@@ -75,11 +76,11 @@ public static async Task GetGeoAsync(string eventData, HttpClient client, string
     }
 }
 
-// Calls Azure Maps reverse geocode API to get address
+// Call Azure Maps reverse geocode API to get address
 public static async Task<string> GetAddrAsync(HttpClient client, string subscriptionKey, string query){
 
     string aUri = "https://atlas.microsoft.com/search/address/reverse/json?subscription-key={0}&api-version=1.0&query={1}";
-    string url = string.Format(aUri,subscriptionKey,query);
+    string adrsUri = string.Format(aUri,subscriptionKey,query);
 
     HttpResponseMessage AdrsResponse = await client.GetAsync(url);
     
@@ -90,13 +91,13 @@ public static async Task<string> GetAddrAsync(HttpClient client, string subscrip
     return address;
 }
 
-// Creates and writes to a blob in data storage
+// Create and write to a blob in data storage
 public static async Task CreateBlobAsync(string name, string violationData){
 
     //Replace accessKey, accountName with your storage account access key and account name
 	string accessKey = "<Access key>";
     string accountName = "<Account name>";
-    string connectionString = "DefaultEndpointsProtocol=https;AccountName=" + accountName + ";AccountKey=" + accessKey + ";EndpointSuffix=core.windows.net";;
+    string connectionString = "DefaultEndpointsProtocol=https;AccountName=" + accountName + ";AccountKey=" + accessKey + ";EndpointSuffix=core.windows.net";
     CloudStorageAccount storageAccount;
 
 	storageAccount = CloudStorageAccount.Parse(connectionString);
