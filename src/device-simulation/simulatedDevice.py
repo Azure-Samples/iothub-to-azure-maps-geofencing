@@ -46,8 +46,7 @@ def iothub_client_telemetry():
         for loc in range(len(positions)):
                 location = positions[loc]
 
-                for i in range(2):
-                    MSG['location']['coordinates'][i] = location[i]
+                MSG['location']['coordinates'][0], MSG['location']['coordinates'][1] = location[0], location[1]
                 
                 encoded_Message = json.dumps(MSG).encode('utf8')
                 message = IoTHubMessage(encoded_Message)
