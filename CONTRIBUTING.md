@@ -1,6 +1,6 @@
-# Contributing to [project-title]
+# Contributing to Implement IoT spatial analytics codebase
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+This project welcomes contributions and suggestions. Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
@@ -21,7 +21,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 Help us keep this project open and inclusive. Please read and follow our [Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 
 ## <a name="issue"></a> Found an Issue?
-If you find a bug in the source code or a mistake in the documentation, you can help us by
+If you find a bug in the source code, you can help us by
+
 [submitting an issue](#submit-issue) to the GitHub Repository. Even better, you can
 [submit a Pull Request](#submit-pr) with a fix.
 
@@ -43,7 +44,6 @@ features, by not reporting duplicate issues.  Providing the following informatio
 chances of your issue being dealt with quickly:
 
 * **Overview of the Issue** - if an error is being thrown a non-minified stack trace helps
-* **Version** - what version is affected (e.g. 0.1.2)
 * **Motivation for or Use Case** - explain what are you trying to do and why the current behavior is a bug for you
 * **Browsers and Operating System** - is this a problem with all browsers?
 * **Reproduce the Error** - provide a live example or a unambiguous set of steps
