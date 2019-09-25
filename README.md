@@ -11,7 +11,7 @@ This repo contains the data and code files required to build an IoT system to [i
 
 ## Getting Started
 
-To get started follow the tutorial [here](https://docs.microsoft.com/azure/azure-maps/tutorial-iothub-maps)
+To get started follow the tutorial [here](https://docs.microsoft.com/azure/azure-maps/tutorial-iot-hub-maps)
 
 
 ## Resources
