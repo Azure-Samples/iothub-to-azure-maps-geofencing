@@ -4,6 +4,7 @@ languages:
 - csharp
 - javascript
 products:
+- azure
 - azure-maps
 - azure-function
 - azure-ad
